@@ -3,11 +3,41 @@
 <!-- <img src="images/churn.jpg"> -->
 
 # 1. Description
-- This is an end-to-end machine learning project that utilizes LightGBM to predict customer's probability of churning in a bank's credit card service. It involves supervised learning (using a labeled training set) for classification, where the target is 1 if the customer attrited, else 0.
-- I implemented this project following some CI/CD principles and using modular coding. First, I developed my entire analysis (from EDA to modeling) in notebooks. Then, I divided the project development into components responsible for data ingestion, transformation, and model training, following the same steps as in the notebooks. Once I had done this, I created scripts for automating the training and prediction pipelines using these components. The training pipeline executes them and obtains all the machine learning model artifacts, while the prediction pipeline makes predictions by consuming the obtained artifacts. All of this was made with good practices like virtual environment use (isolating dependencies), exception handling, loggings, documentation (every script/function/class purposes and definitions are defined inside the files), etc. Afterward, I built a web app API in Flask, integrating everything mentioned above. My objective with this was to get closer to a real data science project workflow by packaging my entire project as a package.
+- Este projeto tem como objetivo a análise exploratória, modelagem de risco e segmentação de perfis financeiros a partir de um dataset sintético de finanças pessoais contendo mais de 32 mil registros individuais. O conjunto de dados representa comportamentos realistas de renda, despesas, poupança, empréstimos e crédito, abrangendo diferentes regiões, faixas etárias, profissões e níveis educacionais.
+
+A análise desenvolvida incluiu desde o pré-processamento dos dados, passando por avaliações univariadas, bivariadas e multivariadas, até a construção de modelos de segmentação de risco, utilizando tanto regras de negócio quanto abordagens estatísticas, como o Gaussian Mixture Model (GMM).
+
+O estudo permitiu identificar fatores críticos que influenciam o credit score e o risco de inadimplência, como renda mensal, proporção dívida/renda, nível educacional, estabilidade profissional e reservas financeiras. Além disso, foram criados grupos estratégicos de perfis de risco, úteis para aplicações em previsão de crédito, análise de risco e segmentação de clientes.
 
 # 2. Technologies and tools
-- The technologies and tools used were Python (Pandas, Numpy, Matplotlib, Seaborn, Scikit-Learn, optuna, LightGBM, Shap, Flask), Jupyter Notebook, Git and Github (version control), machine learning classification algorithms, statistics, Anaconda (terminal) and Visual Studio Code (project development environment).
+- O projeto foi desenvolvido em Python e fez uso de diversas bibliotecas do ecossistema de Ciência de Dados e Machine Learning:
+
+- Pandas: para manipulação, limpeza e transformação dos dados.
+- NumPy: para cálculos numéricos e operações vetorizadas.
+- Matplotlib e Seaborn: para a criação de visualizações estatísticas e gráficos analíticos.
+- SciPy: para aplicação de testes estatísticos, como o qui-quadrado.
+- Scikit-learn: para a modelagem estatística, incluindo o uso de Gaussian Mixture Models (GMM) na identificação de padrões naturais.
+- KaggleHub: para integração e acesso ao dataset diretamente a partir do repositório no Kaggle.
+
+Essa combinação de ferramentas possibilitou um fluxo completo de exploração de dados, visualização, análise estatística e modelagem preditiva, garantindo robustez e flexibilidade na análise.
+
+# 3.Business problem and project objective
+
+Instituições financeiras, fintechs e bancos enfrentam o desafio de avaliar corretamente o risco de crédito dos clientes. Um processo ineficiente pode gerar dois problemas graves:
+
+- Conceder crédito a clientes de alto risco, aumentando a inadimplência.
+
+- Recusar crédito a clientes de baixo risco, perdendo oportunidades de negócios rentáveis.
+
+Além disso, fatores como renda, nível educacional, estabilidade no emprego, proporção dívida/renda e hábitos de poupança influenciam diretamente a capacidade de pagamento de um indivíduo. Assim, surge a necessidade de modelos robustos que combinem variáveis financeiras, demográficas e comportamentais para prever risco de forma mais precisa.
+
+O objetivo do projeto é desenvolver uma análise exploratória e modelos de segmentação de risco de crédito utilizando dados financeiros individuais. Em especial, busca-se:
+
+- Identificar as variáveis mais relevantes que impactam a pontuação de crédito (credit score).
+- Construir perfis de risco a partir de métricas como debt-to-income ratio e savings-to-income ratio.
+- Implementar diferentes abordagens de segmentação de risco (percentis e Gaussian Mixture Models).
+- Criar grupos estratégicos de clientes (Premium, Standard, Basic), auxiliando na tomada de decisão sobre concessão de crédito.
+- Fornecer insights para estratégias de negócio, reduzindo inadimplência e melhorando a alocação de crédito.
 
 <!-- # 3. Business problem and project objective
 
@@ -195,11 +225,11 @@ deactivate
 # 10. Dataset link
 The dataset was collected from kaggle.
 
-Link: https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers?sort=votes
+Link: https://www.kaggle.com/datasets/miadul/personal-finance-ml-dataset
 
 # 11. Contact me
 Linkedin: https://www.linkedin.com/in/pedro-almeida-ds/
 
 Github: https://github.com/allmeidaapedro
 
-Gmail: pedrooalmeida.net@gmail.com
+Gmail: robertodossantos747@gmail.com
