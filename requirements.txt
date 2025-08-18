@@ -8,3 +8,4 @@ kagglehub==0.3.3
 ipython==8.26.0
 kaggle
 jinja2
+plotly
