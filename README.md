@@ -192,17 +192,13 @@ Activate the virtual environment used to isolate the project dependencies.
 source venv/bin/activate  # On Windows, use 'venv\Scripts\activate'
 </pre>
 
-5. Install Dependencies:
+5. Install Dependencies e Download do Dataset:
 
-Use pip to install the required dependencies listed in the requirements.txt file.
+
 <pre>
-pip install -r requirements.txt
+python setup_data.py
 </pre>
 
-6. Run the Application:
-<pre>
-python application.py
-</pre>
 
 <!-- 7. Access the Project Locally:
 
