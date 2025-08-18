@@ -3,14 +3,15 @@
 <!-- <img src="images/churn.jpg"> -->
 
 # 1. Description
-- Este projeto tem como objetivo a análise exploratória, modelagem de risco e segmentação de perfis financeiros a partir de um dataset sintético de finanças pessoais contendo mais de 32 mil registros individuais. O conjunto de dados representa comportamentos realistas de renda, despesas, poupança, empréstimos e crédito, abrangendo diferentes regiões, faixas etárias, profissões e níveis educacionais.
+
+Este projeto tem como objetivo a análise exploratória, modelagem de risco e segmentação de perfis financeiros a partir de um dataset sintético de finanças pessoais contendo mais de 32 mil registros individuais. O conjunto de dados representa comportamentos realistas de renda, despesas, poupança, empréstimos e crédito, abrangendo diferentes regiões, faixas etárias, profissões e níveis educacionais.
 
 A análise desenvolvida incluiu desde o pré-processamento dos dados, passando por avaliações univariadas, bivariadas e multivariadas, até a construção de modelos de segmentação de risco, utilizando tanto regras de negócio quanto abordagens estatísticas, como o Gaussian Mixture Model (GMM).
 
 O estudo permitiu identificar fatores críticos que influenciam o credit score e o risco de inadimplência, como renda mensal, proporção dívida/renda, nível educacional, estabilidade profissional e reservas financeiras. Além disso, foram criados grupos estratégicos de perfis de risco, úteis para aplicações em previsão de crédito, análise de risco e segmentação de clientes.
 
 # 2. Technologies and tools
-- O projeto foi desenvolvido em Python e fez uso de diversas bibliotecas do ecossistema de Ciência de Dados e Machine Learning:
+O projeto foi desenvolvido em Python e fez uso de diversas bibliotecas do ecossistema de Ciência de Dados e Machine Learning:
 
 - Pandas: para manipulação, limpeza e transformação dos dados.
 - NumPy: para cálculos numéricos e operações vetorizadas.
