@@ -2,7 +2,7 @@
 
 <!-- <img src="images/churn.jpg"> -->
 
-# 1. Description
+# 1. Descrição
 
 Este projeto tem como objetivo a análise exploratória, modelagem de risco e segmentação de perfis financeiros a partir de um dataset sintético de finanças pessoais contendo mais de 32 mil registros individuais. O conjunto de dados representa comportamentos realistas de renda, despesas, poupança, empréstimos e crédito, abrangendo diferentes regiões, faixas etárias, profissões e níveis educacionais.
 
@@ -10,7 +10,7 @@ A análise desenvolvida incluiu desde o pré-processamento dos dados, passando p
 
 O estudo permitiu identificar fatores críticos que influenciam o credit score e o risco de inadimplência, como renda mensal, proporção dívida/renda, nível educacional, estabilidade profissional e reservas financeiras. Além disso, foram criados grupos estratégicos de perfis de risco, úteis para aplicações em previsão de crédito, análise de risco e segmentação de clientes.
 
-# 2. Technologies and tools
+# 2. Tecnologias e Ferramentas
 O projeto foi desenvolvido em Python e fez uso de diversas bibliotecas do ecossistema de Ciência de Dados e Machine Learning:
 
 - Pandas: para manipulação, limpeza e transformação dos dados.
@@ -22,7 +22,7 @@ O projeto foi desenvolvido em Python e fez uso de diversas bibliotecas do ecossi
 
 Essa combinação de ferramentas possibilitou um fluxo completo de exploração de dados, visualização, análise estatística e modelagem preditiva, garantindo robustez e flexibilidade na análise.
 
-# 3.Business problem and project objective
+# 3.Problema de negocio e o objetivo do projeto
 
 Instituições financeiras, fintechs e bancos enfrentam o desafio de avaliar corretamente o risco de crédito dos clientes. Um processo ineficiente pode gerar dois problemas graves:
 
@@ -40,7 +40,7 @@ O objetivo do projeto é desenvolver uma análise exploratória e modelos de seg
 - Criar grupos estratégicos de clientes (Premium, Standard, Basic), auxiliando na tomada de decisão sobre concessão de crédito.
 - Fornecer insights para estratégias de negócio, reduzindo inadimplência e melhorando a alocação de crédito.
 
-## Comparação das Abordagens de Modelagem de Risco de Crédito
+## 4.Comparação das Abordagens de Modelagem de Risco de Crédito
 
 A modelagem de risco de crédito apresentada foi desenvolvida em duas abordagens distintas, cada uma com características complementares.  
 
@@ -68,51 +68,46 @@ Dessa forma, a escolha da melhor abordagem depende do objetivo. Se a prioridade 
 | **Principal limitação**         | Dependência de regras pré-definidas   | Menor interpretabilidade inicial        |
 
 
-# 5. Run this project on your local machine
-Prerequisites:
+# 5. Execute este projeto em sua máquina local
+Pré-requisitos:
 
-Before getting started, make sure you have the following installed on your machine:
+Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 - Python 3.11.4
 - pip (Python package manager)
 - Git (Version control tool)
+- Kaggle(Credentials)
 
-Once you have this installed, open a terminal on your local machine and run the following commands:
+Depois de instalar, abra um terminal na sua máquina local e execute os seguintes comandos:
 
-1. Clone the repository:
+1. Clone o repositório:
 <pre>
 git clone https://github.com/Rob-CordJr/Personal-Finance-Analysis.git
 </pre>
 
-2. Navigate to the cloned repository directory:
+2. Navegue até o diretório do repositório clonado:
 <pre>
 cd Personal-Finance-Analysis
 </pre>
 
-3. Create a virtual environment:
+3. Crie um ambiente virtual:
 <pre>
 python -m venv venv
 </pre>
 
-4. Activate the Virtual Environment:
+4. Ative o Ambiente Virtual:
 
-Activate the virtual environment used to isolate the project dependencies.
+Ative o ambiente virtual usado para isolar as dependências do projeto.
+
 <pre>
 source venv/bin/activate  # On Windows, use 'venv\Scripts\activate'
 </pre>
 
-5. Install Dependencies e Download do Dataset:
-
+5. Instale suas dependencias e faça o download do dataset, executando o comando abaixo:
 
 <pre>
 python setup_data.py
 </pre>
 
-
-
-
-<pre>
-deactivate
-</pre>
 
 # 6. Dataset link
 The dataset was collected from kaggle.
