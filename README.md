@@ -1,6 +1,6 @@
 # Personal-Finance-Analysis
 
-<!-- <img src="images/churn.jpg"> -->
+
 
 # 1. Descrição
 
