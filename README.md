@@ -108,13 +108,27 @@ source venv/bin/activate  # On Windows, use 'venv\Scripts\activate'
 python setup_data.py
 </pre>
 
+# 7. Modelo de Regressão Logistica
 
-# 6. Dataset link
+O modelo de **Regressão Logística** apresentou um desempenho satisfatório para a tarefa de previsão de risco de crédito, alcançando uma **AUC de 0,811**, o que indica uma boa capacidade de discriminar clientes entre **alto risco** e **baixo risco**. Além disso, o **Brier Score de 0,175** reforça a boa calibração das probabilidades, mostrando que as estimativas do modelo estão próximas da realidade observada.
+
+Do ponto de vista de negócio, a matriz de confusão demonstra que o modelo identifica corretamente **4.128 clientes de alto risco**, enquanto classifica adequadamente **3.197 clientes de baixo risco**. Embora existam **1.437 falsos negativos** (clientes de alto risco classificados como baixo risco), o impacto desse erro pode ser mitigado ao ajustar o ponto de corte, conforme indicado pelo **KS Statistic de 0,510** e o melhor **cut-off em 0,537**. Isso oferece flexibilidade para priorizar a redução de inadimplência (diminuindo falsos negativos) ou ampliar o acesso ao crédito (diminuindo falsos positivos), de acordo com a estratégia da instituição financeira.
+
+Outro ponto relevante é a análise da importância das variáveis, que mostra que o **índice de poupança em relação à renda (savings-to-income ratio)** é o fator mais determinante no risco de crédito, seguido pela **renda mensal** e pela **situação de emprego**. Isso indica que clientes com maior capacidade de poupança e estabilidade financeira tendem a apresentar menor risco, enquanto aqueles com baixa reserva ou vínculos profissionais frágeis possuem maior probabilidade de inadimplência.
+
+Na prática, o modelo pode ser utilizado para **segmentação de clientes**, atribuindo perfis como **Baixo Risco**, **Médio Risco** e **Alto Risco**. Essa categorização permite decisões mais estratégicas, como:
+
+* **Baixo Risco**: oferecer crédito com taxas mais atrativas, fortalecendo o relacionamento com o cliente.
+* **Médio Risco**: aplicar políticas de monitoramento mais próximas e limites de crédito ajustados.
+* **Alto Risco**: adotar medidas restritivas, como solicitação de garantias adicionais ou recusa de crédito.
+
+
+# 8. Dataset link
 The dataset was collected from kaggle.
 
 Link: https://www.kaggle.com/datasets/miadul/personal-finance-ml-dataset
 
-# 7. Contact me
+# 9. Contact me
 Linkedin: https://www.linkedin.com/in/roberto-cordeiro-5749931a0/
 
 Github: https://github.com/Rob-CordJr
